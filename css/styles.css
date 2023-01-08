@@ -377,7 +377,7 @@ background-size: cover;}
   /* features */
 
 .section-features{
-padding: 96px 0 96px;
+padding: 96px 0;
 }
 
 .features-title{
@@ -412,6 +412,39 @@ gap:24px;}
 width: 356px;
 }}
 
+@media screen and (min-width:1200px){ 
+.section-features {
+padding:120px 0;
+}
+
+.features-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+margin-bottom: 8px;
+text-align: start;}
+
+.features-text {
+width: 264px;
+font-weight: 400;
+line-height: 1.2;
+}
+
+.features-item {
+width: 256px;}
+
+.features-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 112px;
+border-radius: 4px;
+background-color: #F4F4FD;
+margin-bottom: 8px;
+}
+
+.features-icon {
+display:inline;}}
 
 /* .section-features{padding-bottom: 0;}
 
@@ -446,12 +479,24 @@ margin-bottom: 8px;
 
 
  /* what we are doing */
-.work {display: flex;
-}
-.work-list:not(:last-child){margin-right: 24px;}
+
+@media screen and (max-width:767px){
+.work-title,
+.work{
+display: none;}}
+
+@media screen and (max-width:1199px) {
+.work-title,
+.work {display: none;}}
+
+@media screen and (min-width:1200px){
+.work {display: flex;}
+.work-list:not(:last-child){margin-right: 24px;}}
+
 
 
 /* our team */
+
 .team {background: #F4F4FD;}
 
 .section-title {margin-bottom: 72px;
@@ -461,22 +506,23 @@ font-size: 36px;
 line-height:1.1;
 letter-spacing: 0.02em;}
 
-.team-item {display: flex;
-gap:24px;}
+/* .team-item {display: flex;
+gap:24px;} */
 
 .team-list{ box-shadow: 0px 2px 1px 0px #2E2F4214;box-shadow: 0px 1px 1px 0px #2E2F4229;
 box-shadow: 0px 1px 6px 0px #2E2F4214;}
+
 .team-name{font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 8px;}
 
 .card-name{ padding: 32px 16px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 1px 0px #2E2F4214;
-    box-shadow: 0px 1px 1px 0px #2E2F4229;
-    box-shadow: 0px 1px 6px 0px #2E2F4214;
-    text-align: center;}
+background: #FFFFFF;
+box-shadow: 0px 2px 1px 0px #2E2F4214;
+box-shadow: 0px 1px 1px 0px #2E2F4229;
+box-shadow: 0px 1px 6px 0px #2E2F4214;
+text-align: center;}
 
 .team-text{ margin-bottom: 8px;
 
@@ -502,6 +548,15 @@ background-color: var(--accent-color);}
 .socials-icon {
 fill: var(--secondary-text-color);}
 
+@media  screen and (max-width: 768px){
+
+
+} }
+
+/* .team-item {
+    display: flex;
+    gap: 24px;
+} */
 
     /* customers */
     
