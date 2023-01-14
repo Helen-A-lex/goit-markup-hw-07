@@ -24,18 +24,23 @@
       <div class="container header-container">
         <nav class="nav-main">
           <a href="/" class="logo"><span class="logo-part">WEB</span>STUDIO</a>
+
           <ul class="nav-list list">
             <li class="item">
-              <a class="nav-link" href="./index.html">Studio</a>
+              <a class="nav-link link-active" href="./index.html">Studio</a>
             </li>
             <li class="item">
-              <a class="nav-link link-active" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item"><a class="nav-link" href="/">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icon.svg/sprite.svg#menu_btn"></use>
+          </svg>
+        </button>
+
         <ul class="contacts list">
           <li class="item">
             <a class="contact-link" href="mailto:info@devstudio.com"
@@ -49,8 +54,78 @@
           </li>
         </ul>
       </div>
-    </header>
+      <div class="mobile-menu js-menu-container">
+        <button
+          type="button"
+          aria-label="Button close mobile menu"
+          class="mobile-menu-close-btn js-close-menu"
+        >
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icon.svg/sprite.svg#close"></use>
+          </svg>
+        </button>
 
+        <ul class="mobile-menu-nav-list list">
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link-color" href="/">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts list">
+          <li class="mobile-menu-contacts-item">
+            <a class="mobile-menu-contacts-tel" href="tel:+11(000)111-11-11"
+              >+11(000)111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-contacts-item">
+            <a
+              class="mobile-menu-contacts-email"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="modile-menu-socials-list list">
+          <li class="socials-item">
+            <a class="socials-link" href="#">
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icon.svg/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="#">
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icon.svg/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="#">
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icon.svg/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="#">
+              <svg class="socials-icon" width="16" height="16">
+                <use href="./images/icon.svg/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!-- Main content -->
     <main>
       <section class="section portfolio">
