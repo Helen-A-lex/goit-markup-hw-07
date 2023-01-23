@@ -47,8 +47,7 @@ overflow: hidden;}
 {margin: 0 auto;
 padding-left: 16px;
 padding-right: 16px;
-margin-left: auto;
-margin-right: auto; }
+}
 
 @media screen and (min-width: 480px){
 .container{
@@ -786,7 +785,7 @@ margin-left: 80px;
 
  /* Styles PORTFOLIO*/
 
-@media screen and (min-width:480px){
+@media screen and (min-width:320px){
 .portfolio{ 
 padding: 48px 0;}
 
@@ -1286,7 +1285,7 @@ color: var(--title-text-color);
 .mobile-menu-socials-list {
 display: flex;
 align-items: center;
-gap: 56px;
+justify-content: space-between;
 }
 
 .mobile-menu-socials-icon {
